@@ -1,0 +1,66 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 10%;
+    top: 0;
+    display: flex;
+    align-items: left;
+    /* Add background for visibility on small screens */
+    width: 100%; /* Full width */
+    z-index: 101; /* Ensure it stays above other content */
+    /*flex-wrap: wrap;  Allow wrapping on smaller screens */
+}
+
+li {
+    float: none; /* Remove floating to enable flexbox behavior */
+    margin: 0 10px; /* Add spacing between items */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    ul {
+        padding: 10px 0; /* Add some padding for smaller screens */
+        z-index: 100;
+        left: 0%;
+    }
+   
+    li a {
+        font-size: 3vw; /* Reduce font size */
+        padding: 5px 0; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+       visibility: hidden;
+    }
+    ul {
+        left: 0%;
+        padding: 10px 0; /* Add some padding for smaller screens */
+        z-index: 100;
+    }
+
+    li a {
+        font-size: 2.5vw; /* Further reduce font size for very small screens */
+        padding: 5px 0;
+    }
+}

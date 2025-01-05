@@ -1,0 +1,290 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    background-color: black;
+}
+
+.logo img{
+    position: absolute; /* Place it in the top-left corner */
+    top: 10px;
+    left: 10px;
+    max-width: 4%; /* Set a very small width */
+    height: auto; /* Set a very small height */
+}
+.book{
+    position: relative;
+    margin-top: 100px;
+    width: 615px;
+    height: 789px;
+    transition: transfrom 0.5s;
+
+}
+
+.paper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.book,
+.paper{
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    
+    /*perspective: 1500px;*/
+
+}
+
+.front,
+.back {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+
+
+}
+
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 5px solid black;
+
+}
+
+.back {
+    z-index: 0;
+}
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.back-content{
+    transform: rotatey(180deg)
+}
+.flipped .front,
+.flipped .back {
+    transform: rotatey(-180deg)
+}
+
+
+
+button {
+    border: none;
+    background-color: transparent;
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 10; /* Ensure buttons are above the book */
+
+
+   
+}
+
+@media screen and (max-width: 700px) {
+    button {
+        left: 0; /* Bring buttons fully inside for small screens */
+        right: 0;
+    }
+    i {
+        font-size: 20px; /* Slightly reduce icon size for small screens */
+    }
+}
+
+
+button:focus {
+    outline: none;
+}
+
+button:hover i{
+    color: #636363
+}
+i{
+    font-size: 50px;
+    color: black;
+}
+
+#p1 {
+    z-index: 14;
+
+}
+
+#p2 {
+    z-index: 13;
+    
+}
+
+#p3 {
+    z-index: 12;
+
+}
+#p4 {
+    z-index: 11;
+
+}
+
+#p5 {
+    z-index: 10;
+}
+
+#p6 {
+    z-index: 9;
+
+}
+#p7 {
+    z-index: 8;
+
+}
+
+#p8 {
+    z-index: 7;
+}
+
+#p9 {
+    z-index: 6;
+
+}
+#p10 {
+    z-index: 5;
+
+}
+
+#p11 {
+    z-index: 4;
+}
+
+#p12 {
+    z-index: 3;
+
+}
+#p13 {
+    z-index: 2;
+
+}
+#p14 {
+    z-index: 1;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .book {
+        width : 35vw;
+        height: 45vw;
+
+    }
+
+    
+   
+}
+
+
+@media screen and (max-width: 768px) {
+    .book {
+        width : 35vw;
+        height: 45vw;
+
+    }
+
+    
+   
+}
+
+@media screen and (max-width: 480px) {
+    .book {
+        width : 35vw;
+        height: 45vw;
+
+    }
+
+}
+
+/* Overlay Close Button */
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 401; /* Ensure it's above other elements */
+}
+
+#overlay {
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Enlarge page */
+/* Enlarge page */
+/* Enlarge page */
+.enlarged {
+    position: fixed; /* Take the element out of the flow */
+    justify-content: center;
+    bottom: 5%;
+    right: 5%;
+    width: 150%; /* Allow natural width */
+    height: auto; /* Allow natural height */
+    z-index: 105; /* Bring to front */
+    background-color: white; /* Optional: Add background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Optional: Add shadow */
+    overflow: hidden; /* Prevent scrollbars */
+    
+}
+.enlarging {
+    width: 100%;
+    height: 100%;
+ 
+}
+
+
+/* Close button */
+#close-btn {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 5%;
+    right: 5px;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 302;
+}
+
+#close-btn:hover {
+    color: red;
+}
