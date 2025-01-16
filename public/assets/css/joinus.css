@@ -61,7 +61,7 @@ body, html {
     width: 90%; /* Responsive width */
     max-width: 400px; /* Limit max width */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }

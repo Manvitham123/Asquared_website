@@ -9,6 +9,11 @@
     </head>
     <body>
         <div class="collage">
+            
+            <div class="other">
+                <img src="images/asquared-logo-white -better.png">
+            </div>
+      
             <ul class="main-content">
                 <li><img src = "images/IMG_3232.jpg"></li>
                 <li><img src = "images/IMG_3265.jpg"></li>
@@ -30,44 +35,72 @@
                 <li> <img src = "images/A2StickerPaper2.jpeg"></li>
                 <li> <img src = "images/A2StickerPaper2.jpeg"></li>
                 <li> <img src = "images/IMG_0241.jpeg"></li>
-                
-
             </ul>
-      
-        <div class="nav">
-            <div class="wrapper">
-                <div class="middle">
-                    <div class="logo">
-                        <img src="images/logo.png" class="hi" />
+        </div>
+        <div class="fade-in-section">
+            <div class="nav">
+                <div class="wrapper">
+                    <div class="middle">
+                        <div class="logo">
+                            <img src="images/logo.png" class="hi" />
+                        </div>
+                        <div class="surround">
+                            <a href="index2.html">Home</a>
+                            <a href="about.html">About us</a>
+                            <a href="issues.html">Mags</a>
+                            <a href="joinus.html">Join Us</a>
+                            <a href="events.html">Events</a>
+                            <a href="affiliates.html">Affiliate program</a>
+                            <a href="shoots.html">Blog</a>
+                        </div>
                     </div>
-                    <div class="surround">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About us</a>
-                        <a href="issues.html">Mags</a>
-                        <a href="joinus.html">Join Us</a>
-                        <a href="events.html">Events</a>
-                        <a href="affiliates.html">Affiliate program</a>
-                        <a href="shoots.html">Blog</a>
-                    </div>
+            <div class="fade-in-section">
                 </div>
-                <h5 class="footer-text">ART + FASHION + CULTURE</h5>
+                    <h5 class="footer-text">ART + FASHION + CULTURE</h5>
+                </div>
             </div>
             
         </div>
         <script>
-            // Show the navigation bar after 7.5 seconds
+            // Show the logo and nav after a delay
             setTimeout(() => {
                 const nav = document.querySelector('.nav');
+                const logo = document.querySelector('.other');
+        
+                logo.style.visibility = 'visible';
+                logo.style.opacity = '1';
+        
                 nav.style.visibility = 'visible';
-                nav.style.opacity = '0';
-                nav.style.transition = 'opacity 1s ease-in-out';
-                nav.style.opacity = '1'; // Trigger the fade-in effect
-            }, 8000); // 7.5 seconds
-        </script>
+                nav.style.opacity = '1';
+            }, 6000); // Adjust delay as needed
+        // Select all fade-in sections
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
 
+        // Create an IntersectionObserver
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                // Toggle 'is-visible' class based on whether the element is in the viewport
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                } else {
+                    entry.target.classList.remove('is-visible');
+                }
+            });
+        },  {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+        rootMargin: '0px 0px -100px 0px', // Adjust margin to trigger earlier or later
+    });
+
+        // Observe each section
+        fadeInSections.forEach((section) => {
+            observer.observe(section);
+        });
             
-    
-   
+        
+          
+        </script>
+        
+
         
       
          

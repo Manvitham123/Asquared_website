@@ -85,6 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 
 }
@@ -96,6 +97,7 @@ body {
 .flipped .back {
     transform: rotatey(-180deg)
 }
+
 
 
 
@@ -134,67 +136,7 @@ i{
     color: black;
 }
 
-#p1 {
-    z-index: 14;
 
-}
-
-#p2 {
-    z-index: 13;
-    
-}
-
-#p3 {
-    z-index: 12;
-
-}
-#p4 {
-    z-index: 11;
-
-}
-
-#p5 {
-    z-index: 10;
-}
-
-#p6 {
-    z-index: 9;
-
-}
-#p7 {
-    z-index: 8;
-
-}
-
-#p8 {
-    z-index: 7;
-}
-
-#p9 {
-    z-index: 6;
-
-}
-#p10 {
-    z-index: 5;
-
-}
-
-#p11 {
-    z-index: 4;
-}
-
-#p12 {
-    z-index: 3;
-
-}
-#p13 {
-    z-index: 2;
-
-}
-#p14 {
-    z-index: 1;
-
-}
 
 
 @media screen and (max-width: 1024px) {
