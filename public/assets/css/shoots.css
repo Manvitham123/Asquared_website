@@ -16,11 +16,9 @@ body, html {
     max-width: 4%; /* Set a very small width */
     height: auto; /* Set a very small height */
 }
-
-
-Body {
+body {
   text-align: center;
-  background-image: url(../src/frontpage_background.jpg);
-  height: 100%;
-  
+  background-image: url(/public/images/IMG_5585.jpeg);
+  background-size: contain;
+  width: 100%;
 }
