@@ -61,14 +61,15 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 // Adjust navigation button positions based on screen size
 function openBook() {
     book.style.transform = "translateX(50%)";
+    console.log(width)
     if(width <= 480){
         prevBtn.style.transform = "translateX(-285%)";
         nextBtn.style.transform = "translateX(285%)";
 
     }
-    else if(width <= 768){
-        prevBtn.style.transform = "translateX(-285%)";
-        nextBtn.style.transform = "translateX(285%)";
+    else if(width <= 900){
+        prevBtn.style.transform = "translateX(-330%)";
+        nextBtn.style.transform = "translateX(330%)";
 
     }
     else{

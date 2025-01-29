@@ -16,3 +16,11 @@ body, html {
     max-width: 4%; /* Set a very small width */
     height: auto; /* Set a very small height */
 }
+
+
+Body {
+  text-align: center;
+  background-image: url(../src/frontpage_background.jpg);
+  height: 100%;
+  
+}

@@ -117,6 +117,7 @@ button {
     button {
         left: 0; /* Bring buttons fully inside for small screens */
         right: 0;
+
     }
     i {
         font-size: 20px; /* Slightly reduce icon size for small screens */
@@ -145,6 +146,7 @@ i{
         height: 45vw;
 
     }
+   
 
     
    
@@ -157,7 +159,7 @@ i{
         height: 45vw;
 
     }
-
+  
     
    
 }
