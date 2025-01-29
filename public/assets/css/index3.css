@@ -55,6 +55,7 @@ body, html {
     height: auto;
     opacity: 0;
     animation: appearLayer 0.5s linear forwards;
+    overflow: hidden;
   }
   
   .collage img {

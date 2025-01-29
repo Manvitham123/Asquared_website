@@ -22,3 +22,14 @@ body {
   background-size: contain;
   width: 100%;
 }
+
+
+li a {
+  color: black;
+  border-color: black;
+}
+
+li a:hover {
+  text-decoration: underline;
+  background-color: white;
+}
