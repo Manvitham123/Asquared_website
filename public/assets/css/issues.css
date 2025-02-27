@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    
+
+}
+
+
+.logo img {
+    position: absolute; /* Place it in the top-left corner */
+    top: 10px;
+    left: 10px;
+    max-width: 4%; /* Set a very small width */
+    height: auto;
+}
+
+.magazine-container {
+    text-align: center; /* Center align the heading and gallery */
+    margin-top: 100px; /* Push content below the logo */
+}
+
+.magazine-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 20;
+
+    
+}
+
+.magazine-gallery {
+    display: flex;
+    justify-content: center; /* Center the magazines horizontally */
+    gap: 70px; /* Space between the magazines */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 20px;
+}
+
+.magazine {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 250px; /* Set a fixed width for all magazines */
+}
+
+.magazine img {
+    width: 100%; /* Ensure the image fits within the magazine container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.magazine img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.magazine p {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 100;
+}
+

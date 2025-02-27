@@ -1,0 +1,35 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling issues */
+  }
+  .logo img{
+    position: absolute; /* Place it in the top-left corner */
+    top: 10px;
+    left: 10px;
+    max-width: 4%; /* Set a very small width */
+    height: auto; /* Set a very small height */
+}
+body {
+  text-align: center;
+  background-image: url(/public/images/IMG_5585.jpeg);
+  background-size: contain;
+  width: 100%;
+}
+
+
+li a {
+  color: black;
+  border-color: black;
+}
+
+li a:hover {
+  text-decoration: underline;
+  background-color: white;
+}
